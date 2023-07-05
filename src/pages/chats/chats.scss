@@ -1,0 +1,45 @@
+@import "interlocutor";
+
+.chats {
+  height: 100%;
+  display: flex;
+
+  &__wrapper-list {
+    width: 310px;
+    height: 100%;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+    border-right: 1px solid #EAEAEA;
+  }
+
+  &__top-panel {
+    margin-bottom: 14px;
+    text-align: end;
+  }
+
+  &__button-user-settings {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &__search {
+    margin: 23px 0;
+    background-color: #EFEFEF;
+    color: #999999;
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  &__wrap-list {
+    border-top: 1px solid #EAEAEA;
+    overflow-y: auto;
+    height: calc(100% - (98.5px + 14px));
+  }
+}

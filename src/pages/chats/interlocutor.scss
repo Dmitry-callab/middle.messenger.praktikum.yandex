@@ -1,0 +1,64 @@
+.interlocutor {
+  width: 100%;
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid #EAEAEA;
+
+  &__avatar {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #EFEFEF;
+  }
+
+  &__wrap-message {
+    padding-left: 10px;
+  }
+
+  &__name {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #1E1E1E;
+  }
+
+  &__last-message {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #999999;
+  }
+
+  &__last-message-owner {
+    color: #1E1E1E;
+  }
+
+  &__wrap-meta {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__time {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    color: #999999;
+  }
+
+  &__unread-count {
+    background-color: #3369F3;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: relative;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    text-align: center;
+  }
+}

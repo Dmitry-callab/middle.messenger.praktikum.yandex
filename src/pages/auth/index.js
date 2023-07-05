@@ -2,9 +2,9 @@ import Handlebars from "handlebars/runtime";
 
 import render from "../../utils/render";
 import routes from "../../constants/routes";
-import templateLogIn from './modules/logIn/templateLogIn.hbs';
-import templatePage from './index.hbs';
-import templateSignIn from './modules/signIn/index.hbs';
+import templateLogIn from './modules/logIn/logIn.hbs';
+import templatePage from './auth.hbs';
+import templateSignIn from './modules/signIn/signIn.hbs';
 
 function renderPage(params) {
 

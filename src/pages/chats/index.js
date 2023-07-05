@@ -1,4 +1,4 @@
-import template from './template.hbs';
+import template from './chats.hbs';
 import render from "../../utils/render";
 
 function renderPage(params) {

@@ -1,0 +1,9 @@
+@import "./modules/logIn/logIn";
+@import "./modules/signIn/signIn";
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
