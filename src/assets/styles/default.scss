@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #ffffff;
+  min-width: 320px;
+  height: 100vh;
+  color: #1E1E1E;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}

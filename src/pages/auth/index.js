@@ -5,6 +5,7 @@ import routes from "../../constants/routes";
 import templateLogIn from './modules/logIn/logIn.hbs';
 import templatePage from './auth.hbs';
 import templateSignIn from './modules/signIn/signIn.hbs';
+import './modules/logIn/index';
 
 function renderPage(params) {
 

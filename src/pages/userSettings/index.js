@@ -1,4 +1,4 @@
-import template from './template.hbs';
+import template from './userSettings.hbs';
 import render from "../../utils/render";
 
 function renderPage(params) {

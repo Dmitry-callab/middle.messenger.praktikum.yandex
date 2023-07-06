@@ -1,0 +1,61 @@
+.userSettings {
+  height: 100%;
+  display: flex;
+
+  &__back-button {
+    width: 65px;
+    height: 100%;
+    background-color: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__profile-wrapper {
+    width: calc(100% - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__profile {
+    width: 510px;
+  }
+
+  &__avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #EFEFEF;
+    margin: 0 auto 21px;
+  }
+
+  &__name {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__wrap-profile-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 11px;
+    padding-bottom: 10px;
+  }
+
+  &__wrap-profile-field_no-border-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    margin-bottom: 11px;
+    padding-bottom: 10px;
+  }
+
+  &__wrap-progile-margi-bottom {
+    margin-bottom: 60px;
+  }
+}

@@ -3,21 +3,11 @@
         Вход
     </div>
     <form class="card__form">
-        <input
-                type="text"
-                class="card__input"
-                placeholder="Логин"
-        >
-        <input
-                type="password"
-                class="card__input"
-                placeholder="Пароль"
-        >
+        {{> input id="login" className="" type="text" placeholder="Логин"}}
+        {{> input id="password" type="password" placeholder="Пароль"}}
     </form>
     <div class="card__wrap-footer">
-        <button class="card__button-submit">
-            Авторизоваться
-        </button>
+        {{> button className="card__button-submit" text="Авторизоваться"}}
         <a href="/sign-in" class="card__button-appeal">
             Нет аккаунта ?
         </a>
