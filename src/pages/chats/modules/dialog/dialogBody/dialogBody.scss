@@ -1,0 +1,24 @@
+.dialog-body {
+  overflow-y: auto;
+  padding-bottom: 30px;
+
+  &__messages-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__time-splitter {
+    margin-bottom: 30px;
+  }
+
+  &__message {
+    margin-bottom: 10px;
+    max-width: calc(43.5%);
+  }
+
+  &__message_owner_mine {
+    align-self: flex-end;
+  }
+}

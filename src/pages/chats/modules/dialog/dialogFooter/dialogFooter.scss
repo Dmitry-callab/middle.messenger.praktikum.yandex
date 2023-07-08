@@ -1,0 +1,58 @@
+.dialog-footer {
+  height: 55px;
+  display: flex;
+  align-items: center;
+
+  $margin-right-button-attachment: 10px;
+  $margin-left-button-send: 10px;
+
+  $width-button-attachment: 32px;
+  $width-button-send: 28px;
+
+  &__button-attachment {
+    width: $width-button-send;
+    height: $width-button-send;
+    color: $color-text-black;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    box-sizing: border-box;
+    margin-right: $margin-right-button-attachment;
+    transition: .2s color;
+
+    &:active, &:focus {
+      color: #3369F3;
+    }
+  }
+
+  &__text-field {
+    width: calc(100% - #{$width-button-attachment} - #{$margin-right-button-attachment} - #{$margin-left-button-send} - #{$width-button-send});
+    height: 32px;
+
+    background-color: #EFEFEF;
+    color: #999999;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+
+    &::placeholder {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+  }
+
+  &__button-send {
+    margin-left: $margin-left-button-send;
+    padding: 6px 6px;
+    width: $width-button-send;
+    height: $width-button-send;
+    border: none;
+    background-color: #3369F3;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
