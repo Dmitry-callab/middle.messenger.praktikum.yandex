@@ -1,4 +1,4 @@
-<div class="companion {{classNameCompanion}}">
+<div class="companion {{#if isBorderTop}}companion_bordered_top{{/if}} {{#if isBorderBottom}}companion_bordered_bottom{{/if}} {{classNameCompanion}}">
     <div class="companion__content-wrapper">
         <div class="companion__avatar"></div>
         <div class="companion__wrap-message">
@@ -6,7 +6,9 @@
                 {{name}}
             </div>
             <div class="companion__last-message">
+                {{#if isOwnLastMessage}}
                 <span class="companion__last-message-owner">Вы:</span>
+                {{/if}}
                 <span>{{text}}</span>
             </div>
         </div>
