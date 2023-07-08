@@ -37,7 +37,12 @@
     color: $color-primary;
   }
 
-  &__read-status {
+  &__read-status-wrapper {
+    width: 10px;
+    margin-right: 4px;
+  }
 
+  &__read-status-icon {
+    margin-bottom: -2px;
   }
 }
