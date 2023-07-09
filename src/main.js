@@ -5,7 +5,6 @@ import renderPageUserSettings from "./pages/userSettings";
 import renderPageSomethingWentWrong from "./pages/somethingWentWrong";
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('netlify deploy test');
 
     const { location } = window;
     const { pathname } = location;
