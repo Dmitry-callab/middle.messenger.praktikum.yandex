@@ -1,5 +1,6 @@
-@import "./modules/logIn/logIn";
-@import "./modules/signIn/signIn";
+@import "card";
+@import "modules/logIn/logIn";
+@import "modules/signIn/signIn";
 
 .auth-page {
   display: flex;

@@ -21,3 +21,4 @@
 
 ## Ссылки
 Макет приложения в Figma - https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1
+Развернутый проект на Netlify - https://resonant-speculoos-432255.netlify.app/

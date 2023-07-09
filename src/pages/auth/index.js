@@ -1,11 +1,14 @@
 import Handlebars from "handlebars/runtime";
-
 import render from "../../utils/render";
 import routes from "../../constants/routes";
-import templateLogIn from './modules/logIn/logIn.hbs';
 import templatePage from './auth.hbs';
+import templateLogIn from './modules/logIn/logIn.hbs';
 import templateSignIn from './modules/signIn/signIn.hbs';
-import './modules/logIn/index';
+import templateInput from '../../components/input/input.hbs';
+import templateButton from '../../components/button/button.hbs';
+
+Handlebars.registerPartial('input', templateInput);
+Handlebars.registerPartial('button', templateButton);
 
 function renderPage(params) {
 
@@ -13,12 +16,12 @@ function renderPage(params) {
     switch (pathname) {
         case routes.home:
         case routes.logIn: {
-            Handlebars.registerPartial('page', templateLogIn);
+            Handlebars.registerPartial('card', templateLogIn);
             render(templatePage());
             break;
         }
         case routes.signIn: {
-            Handlebars.registerPartial('page', templateSignIn);
+            Handlebars.registerPartial('card', templateSignIn);
             render(templatePage());
             break;
         }

@@ -1,14 +1,14 @@
-<div class="card-log-in">
-    <div class="card-log-in__title">
+<div class="card card-log-in">
+    <div class="card__title">
         Вход
     </div>
-    <form class="card-log-in__form">
+    <form class="card__form card-log-in__form">
         {{> input id="login" name="login" type="text" placeholder="Логин"}}
         {{> input id="password" type="password" name="password" placeholder="Пароль"}}
+        {{> button className="card__button-submit card-log-in__button-submit" type="submit" text="Войти"}}
     </form>
-    <div class="card-log-in__wrap-footer">
-        {{> button className="card-log-in__button-submit" text="Войти"}}
-        <a href="/sign-in" class="card-log-in__button-sign-in">
+    <div class="card__wrap-redirect card-log-in__wrap-redirect">
+        <a href="/sign-in" class="card__button-redirect">
             Нет аккаунта?
         </a>
     </div>
