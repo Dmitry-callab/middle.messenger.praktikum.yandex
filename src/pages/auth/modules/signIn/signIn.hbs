@@ -1,49 +1,19 @@
-<div class="card-signIn">
-    <div class="card-signIn__title">
+<div class="card-sign-in">
+    <div class="card-sign-in__title">
         Вход
     </div>
-    <form class="card-signIn__form">
-        <input
-                type="email"
-                class="card-signIn__input"
-                placeholder="Почта"
-        >
-        <input
-                type="text"
-                class="card-signIn__input"
-                placeholder="Логин"
-        >
-        <input
-                type="text"
-                class="card-signIn__input"
-                placeholder="Имя"
-        >
-        <input
-                type="text"
-                class="card-signIn__input"
-                placeholder="Фамилия"
-        >
-        <input
-                type="tel"
-                class="card-signIn__input"
-                placeholder="Телефон"
-        >
-        <input
-                type="password"
-                class="card-signIn__input"
-                placeholder="Пароль"
-        >
-        <input
-                type="password"
-                class="card-signIn__input"
-                placeholder="Пароль (еще раз)"
-        >
+    <form class="card-sign-in__form">
+        {{> input id="login" className="card-sign-in__input" type="email" placeholder="Почта"}}
+        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Логин"}}
+        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Имя"}}
+        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Фамилия"}}
+        {{> input id="login" className="card-sign-in__input" type="tel" placeholder="Телефон"}}
+        {{> input id="login" className="card-sign-in__input" type="password" placeholder="Пароль"}}
+        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Пароль (еще раз)"}}
     </form>
-    <div class="card-signIn__wrap-footer">
-        <button class="card-signIn__button-submit">
-            Зарегестрироваться
-        </button>
-        <a href="/log-in" class="card-signIn__button-appeal">
+    <div class="card-sign-in__wrap-footer">
+        {{> button className="card-sign-in__button-submit" text="Зарегестрироваться"}}
+        <a href="/log-in" class="card-sign-in__button-log-in">
             Войти
         </a>
     </div>
