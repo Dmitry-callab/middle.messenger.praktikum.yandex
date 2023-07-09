@@ -37,8 +37,6 @@ $margin-bottom-profile-field: 10px;
 
   &__profile {
     width: 510px;
-    display: flex;
-    flex-direction: column;
   }
 
   &__avatar {
@@ -96,11 +94,12 @@ $margin-bottom-profile-field: 10px;
 
     &_mode_edit-info {
       margin-top: 97px;
+      margin-bottom: 0;
     }
 
     &_mode_edit-password {
       margin-top: 97px;
-      margin-bottom: calc(162px - #{$margin-bottom-profile-field});;
+      margin-bottom: 0;
     }
 
     &_mode_edit-info .user-settings__profile-field-value,
@@ -116,6 +115,11 @@ $margin-bottom-profile-field: 10px;
     &_mode_edit-password .user-settings__profile-field {
       padding-bottom: 5.5px;
     }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
   }
 
   &__profile-field {
@@ -160,5 +164,13 @@ $margin-bottom-profile-field: 10px;
     line-height: 13px;
     font-weight: 500;
     color: #FFFFFF;
+
+    &_mode_edit-info {
+      margin-top: calc(60px - #{$margin-bottom-profile-field});
+    }
+
+    &_mode_edit-password {
+      margin-top: calc(162px - #{$margin-bottom-profile-field});;
+    }
   }
 }

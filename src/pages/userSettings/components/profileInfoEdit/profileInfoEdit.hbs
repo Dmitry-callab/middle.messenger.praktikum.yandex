@@ -1,4 +1,5 @@
 <div class="user-settings__profile-info-wrapper user-settings__profile-info-wrapper_mode_edit-info">
+    <form class="user-settings__form">
     <div class="user-settings__profile-field user-settings__profile-field_bordered_bottom">
         <div class="user-settings__profile-field-name-wrapper">
             <span class="user-settings__profile-field-name user-settings__profile-field-name_clickable">
@@ -59,5 +60,6 @@
             <input class="user-settings__profile-field-value" type="text" name="phone" value="+7 (909) 967 30 30">
         </div>
     </div>
+        {{> button className="user-settings__button-save user-settings__button-save_mode_edit-info" text="Сохранить" type="submit"}}
+    </form>
 </div>
-{{> button className="user-settings__button-save" text="Сохранить"}}
