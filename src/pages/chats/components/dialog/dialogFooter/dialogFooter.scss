@@ -26,8 +26,14 @@
     }
   }
 
+  &__form {
+    display: flex;
+    align-items: center;
+    width: calc(100% - #{$width-button-attachment} - #{$margin-right-button-attachment});
+  }
+
   &__text-field {
-    width: calc(100% - #{$width-button-attachment} - #{$margin-right-button-attachment} - #{$margin-left-button-send} - #{$width-button-send});
+    width: calc(100% - #{$margin-left-button-send} - #{$width-button-send});
     height: 32px;
 
     background-color: #EFEFEF;
