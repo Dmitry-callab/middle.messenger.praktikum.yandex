@@ -3,16 +3,16 @@
         Вход
     </div>
     <form class="card-sign-in__form">
-        {{> input id="login" className="card-sign-in__input" type="email" placeholder="Почта"}}
-        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Логин"}}
-        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Имя"}}
-        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Фамилия"}}
-        {{> input id="login" className="card-sign-in__input" type="tel" placeholder="Телефон"}}
-        {{> input id="login" className="card-sign-in__input" type="password" placeholder="Пароль"}}
-        {{> input id="login" className="card-sign-in__input" type="text" placeholder="Пароль (еще раз)"}}
+        {{> input id="login" className="card-sign-in__input" type="email" name="email" placeholder="Почта"}}
+        {{> input id="login" className="card-sign-in__input" type="text" name="login" placeholder="Логин"}}
+        {{> input id="login" className="card-sign-in__input" type="text" name="first_name" placeholder="Имя"}}
+        {{> input id="login" className="card-sign-in__input" type="text" name="second_name" placeholder="Фамилия"}}
+        {{> input id="login" className="card-sign-in__input" type="tel" name="phone" placeholder="Телефон"}}
+        {{> input id="login" className="card-sign-in__input" type="password" name="password" placeholder="Пароль"}}
+        {{> input id="login" className="card-sign-in__input" type="text" name="password_repeat" placeholder="Пароль (еще раз)"}}
     </form>
     <div class="card-sign-in__wrap-footer">
-        {{> button className="card-sign-in__button-submit" text="Зарегестрироваться"}}
+        {{> button className="card-sign-in__button-submit" text="Зарегистрироваться"}}
         <a href="/log-in" class="card-sign-in__button-log-in">
             Войти
         </a>

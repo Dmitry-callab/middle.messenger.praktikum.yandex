@@ -3,13 +3,13 @@
         Вход
     </div>
     <form class="card-log-in__form">
-        {{> input id="login" type="text" placeholder="Логин"}}
-        {{> input id="password" type="password" placeholder="Пароль"}}
+        {{> input id="login" name="login" type="text" placeholder="Логин"}}
+        {{> input id="password" type="password" name="password" placeholder="Пароль"}}
     </form>
     <div class="card-log-in__wrap-footer">
-        {{> button className="card-log-in__button-submit" text="Авторизоваться"}}
+        {{> button className="card-log-in__button-submit" text="Войти"}}
         <a href="/sign-in" class="card-log-in__button-sign-in">
-            Нет аккаунта ?
+            Нет аккаунта?
         </a>
     </div>
 </div>
