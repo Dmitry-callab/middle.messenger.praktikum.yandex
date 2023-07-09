@@ -1,0 +1,54 @@
+@import "components/list/chatsList/chatsList";
+@import "components/list/companion/companion";
+@import "components/list/topPanelList/topPanelList";
+
+@import "components/dialog/dialogHeader/dialogHeader";
+@import "components/dialog/dialogBody/dialogBody";
+@import "components/dialog/dialogFooter/dialogFooter";
+@import "components/dialog/dialogEmpty/dialogEmpty";
+@import "components/dialog/message/message";
+@import "components/dialog/timeSplitter/timeSlitter";
+
+.chats {
+  height: 100%;
+  display: flex;
+
+  &__list-container {
+    width: 310px;
+    height: 100%;
+    max-width: 100%;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+    border-right: 1px solid #EAEAEA;
+  }
+
+  &__list-top-panel-container {
+    padding: 0 10px;
+  }
+
+  &__list-top-panel {
+    padding: 21px 0 14px;
+    border-bottom: 1px solid $color-border-primary;
+  }
+
+  &__chats-list {
+    height: calc(100% - 103px);
+  }
+
+  &__dialog-container {
+    padding: 0 20px 0 20px;
+    width: calc(100% - 310px);
+  }
+
+  &__dialog-header {
+    border-bottom: 1px solid $color-border-primary;
+  }
+
+  &__dialog-body {
+    height: calc(100% - 55px * 2);
+  }
+
+  &__dialog-footer {
+    border-top: 1px solid $color-border-primary;;
+  }
+}

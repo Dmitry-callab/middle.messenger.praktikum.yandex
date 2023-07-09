@@ -1,0 +1,28 @@
+.input-primary {
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+    color: inherit;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid #3369F3;
+
+    &::placeholder {
+      font-size: inherit;
+      font-style: inherit;
+      color: inherit;
+      opacity: .4;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

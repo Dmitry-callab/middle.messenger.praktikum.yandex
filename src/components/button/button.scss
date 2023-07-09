@@ -1,0 +1,21 @@
+.button {
+  width: fit-content;
+  background: #3369F3;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 0.61em;
+  padding: 0.92em;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: .1s background-color ease-in-out;
+
+  &:hover {
+    background-color: #4c7efc;
+  }
+
+  &:focus-visible, &:active {
+    background-color: #2853bf;
+  }
+}

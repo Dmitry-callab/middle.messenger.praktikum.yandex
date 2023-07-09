@@ -1,0 +1,20 @@
+<div class="card card-sign-in">
+    <div class="card__title">
+        Вход
+    </div>
+    <form class="card__form card-sign-in__form">
+        {{> input id="login" className="card__input" type="email" name="email" placeholder="Почта"}}
+        {{> input id="login" className="card__input" type="text" name="login" placeholder="Логин"}}
+        {{> input id="login" className="card__input" type="text" name="first_name" placeholder="Имя"}}
+        {{> input id="login" className="card__input" type="text" name="second_name" placeholder="Фамилия"}}
+        {{> input id="login" className="card__input" type="tel" name="phone" placeholder="Телефон"}}
+        {{> input id="login" className="card__input" type="password" name="password" placeholder="Пароль"}}
+        {{> input id="login" className="card__input" type="text" name="password_repeat" placeholder="Пароль (еще раз)"}}
+        {{> button className="card__button-submit card-sign-in__button-submit" type="submit" text="Зарегистрироваться"}}
+    </form>
+    <div class="card__wrap-redirect card-sign-in__wrap-redirect">
+        <a href="/log-in" class="card__button-redirect">
+            Войти
+        </a>
+    </div>
+</div>

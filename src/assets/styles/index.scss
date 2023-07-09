@@ -1,0 +1,20 @@
+@import "fonts";
+@import "default";
+@import "variables";
+
+// components
+@import "../../components/input/input";
+@import "../../components/button/button";
+@import "../../components/buttonLink/buttonLink";
+
+
+// pages
+@import "../../pages/auth/auth";
+@import "../../pages/chats/chats";
+@import "../../pages/userSettings/userSettings";
+@import "../../pages/somethingWentWrong/somethingWentWrong";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}

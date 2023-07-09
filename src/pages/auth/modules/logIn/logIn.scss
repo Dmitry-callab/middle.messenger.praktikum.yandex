@@ -1,0 +1,15 @@
+.card-log-in {
+    $form-gap: 25px;
+
+    &__form {
+        row-gap: $form-gap;
+    }
+
+    &__button-submit {
+        margin-top: calc(169px - #{$form-gap});
+    }
+
+    &__wrap-redirect {
+        margin-top: 14px;
+    }
+}

@@ -1,0 +1,17 @@
+<main class="chats">
+    <div class="chats__list-container">
+        <div class="chats__list-top-panel-container">
+            {{> topPanelList className="chats__list-top-panel"}}
+        </div>
+        {{> chatsList className="chats__chats-list"}}
+    </div>
+    <div class="chats__dialog-container">
+        {{#if isCertainUser}}
+            {{> dialogHeader classNameDialogHeader="chats__dialog-header"}}
+            {{> dialogBody classNameDialogBody="chats__dialog-body"}}
+            {{> dialogFooter classNameDialogFooter="chats__dialog-footer"}}
+        {{else}}
+            {{> dialogEmpty }}
+        {{/if}}
+    </div>
+</main>

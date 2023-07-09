@@ -1,0 +1,28 @@
+<div class="user-settings">
+    <div class="user-settings__back-button-wrapper">
+        <a class="user-settings__back-button" href="/chats">
+            <svg viewBox="0 0 13 12">
+                <use href="/assets/icons/sprite.svg#arrowSend"/>
+            </svg>
+        </a>
+    </div>
+    <div class="user-settings__profile-wrapper">
+        <div class="user-settings__profile">
+            <div class="user-settings__avatar" name="avatar">
+                <svg class="user-settings__avatar-icon" viewBox="0 0 40 40">
+                    <use href="/assets/icons/sprite.svg#avatarUserSettings"/>
+                </svg>
+            </div>
+            {{#if isProfileInfo}}
+                <div class="user-settings__name">Иван</div>
+                {{> profileInfo }}
+            {{/if}}
+            {{#if isEditProfileInfo}}
+                {{> profileInfoEdit }}
+            {{/if}}
+            {{#if isEditProfilePassword}}
+                {{> profilePasswordEdit }}
+            {{/if}}
+        </div>
+    </div>
+</div>

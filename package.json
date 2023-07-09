@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=16.15.1 <17.0.0",
+    "npm": ">8.11.0 <9.0.0"
+  },
+  "scripts": {
+    "start": "vite build && node server.js",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.63.6",
+    "vite": "^4.3.9",
+    "vite-plugin-static-copy": "^0.16.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "vite-plugin-handlebars": "^1.6.0"
+  }
+}
