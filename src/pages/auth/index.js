@@ -11,6 +11,7 @@ function renderPage(params) {
 
     const { pathname } = params;
     switch (pathname) {
+        case routes.home:
         case routes.logIn: {
             Handlebars.registerPartial('page', templateLogIn);
             render(templatePage());

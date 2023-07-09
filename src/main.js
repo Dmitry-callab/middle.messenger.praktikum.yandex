@@ -5,7 +5,6 @@ import renderPageUserSettings from "./pages/userSettings";
 import renderPageSomethingWentWrong from "./pages/somethingWentWrong";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const root = document.querySelector('#app');
 
     const { location } = window;
     const { pathname } = location;
@@ -14,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const params = { pathname, queryParams: {} };
 
     switch (pathname) {
+        case routes.home:
         case routes.logIn:
         case routes.signIn:{
             renderPageAuth(params);
