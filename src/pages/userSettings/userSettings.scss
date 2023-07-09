@@ -1,8 +1,11 @@
-.userSettings {
+$margin-bottom-profile-field: 10px;
+
+
+.user-settings {
   height: 100%;
   display: flex;
 
-  &__back-button {
+  &__back-button-wrapper {
     width: 65px;
     height: 100%;
     background-color: #FBFBFB;
@@ -13,49 +16,149 @@
     justify-content: center;
   }
 
+  &__back-button {
+    padding: 6px 6px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: #3369F3;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
   &__profile-wrapper {
     width: calc(100% - 65px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 60px;
   }
 
   &__profile {
     width: 510px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__avatar {
     width: 130px;
     height: 130px;
+    position: relative;
     border-radius: 50%;
     background-color: #EFEFEF;
-    margin: 0 auto 21px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:after {
+      content: "Поменять аватар";
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      transition: .3s opacity;
+    }
+
+    &:hover:after {
+      opacity: 1;
+    }
+  }
+
+  &__avatar-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-top: 21px;
   }
 
-  &__wrap-profile-field {
+  &__profile-info-wrapper {
+    margin-top: 60px;
+    margin-bottom: calc(60px - #{$margin-bottom-profile-field});
+
+    &_mode_edit-info {
+      margin-top: 97px;
+    }
+
+    &_mode_edit-password {
+      margin-top: 97px;
+      margin-bottom: calc(162px - #{$margin-bottom-profile-field});;
+    }
+
+    &_mode_edit-info .user-settings__profile-field-value,
+    &_mode_edit-password .user-settings__profile-field-value {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      border: 0;
+      text-align: right;
+    }
+
+    &_mode_edit-info .user-settings__profile-field,
+    &_mode_edit-password .user-settings__profile-field {
+      padding-bottom: 5.5px;
+    }
+  }
+
+  &__profile-field {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #EAEAEA;
-    margin-bottom: 11px;
+    color: $color-text-black;
+    margin-bottom: $margin-bottom-profile-field;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
     padding-bottom: 10px;
+
+    &_bordered_bottom {
+      border-bottom: 1px solid #EAEAEA;
+    }
   }
 
-  &__wrap-profile-field_no-border-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: none;
-    margin-bottom: 11px;
-    padding-bottom: 10px;
+  &__profile-field-name {
+    &_clickable {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    &_colored_blue {
+      color: $color-primary;
+    }
+
+    &_colored_red {
+      color: #FF0000;
+    }
   }
 
-  &__wrap-progile-margi-bottom {
-    margin-bottom: 60px;
+  &__profile-field-value {
+    color: #999999;
+  }
+
+  &__button-save {
+    width: 280px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+    color: #FFFFFF;
   }
 }

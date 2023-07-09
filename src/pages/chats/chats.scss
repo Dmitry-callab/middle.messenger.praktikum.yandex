@@ -1,13 +1,13 @@
-@import "modules/list/chatsList/chatsList";
-@import "modules/list/companion/companion";
-@import "modules/list/topPanelList/topPanelList";
+@import "components/list/chatsList/chatsList";
+@import "components/list/companion/companion";
+@import "components/list/topPanelList/topPanelList";
 
-@import "modules/dialog/dialogHeader/dialogHeader";
-@import "modules/dialog/dialogBody/dialogBody";
-@import "modules/dialog/dialogFooter/dialogFooter";
-@import "modules/dialog/dialogEmpty/dialogEmpty";
-@import "modules/dialog/message/message";
-@import "modules/dialog/timeSplitter/timeSlitter";
+@import "components/dialog/dialogHeader/dialogHeader";
+@import "components/dialog/dialogBody/dialogBody";
+@import "components/dialog/dialogFooter/dialogFooter";
+@import "components/dialog/dialogEmpty/dialogEmpty";
+@import "components/dialog/message/message";
+@import "components/dialog/timeSplitter/timeSlitter";
 
 .chats {
   height: 100%;

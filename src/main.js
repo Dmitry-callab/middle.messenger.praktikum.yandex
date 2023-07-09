@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
         }
         case routes.userSettings: {
+            const urlParams = new URLSearchParams(location.search);
+            params.queryParams = { editMode: urlParams.get('edit-mode')};
             renderPageUserSettings(params);
             break;
         }
