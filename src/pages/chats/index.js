@@ -29,7 +29,8 @@ Handlebars.registerPartial('message', templateMessage);
 Handlebars.registerPartial('timeSplitter', templateTimeSplitter);
 
 function renderPage(params) {
-    render(template());
+    const { isCertainUser } = params.queryParams;
+    render(template({isCertainUser}));
 }
 
 export default renderPage;

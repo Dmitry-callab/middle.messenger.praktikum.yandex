@@ -20,12 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
         }
         case routes.chats: {
+            const urlParams = new URLSearchParams(location.search);
+            params.queryParams.isCertainUser = urlParams.get('certain-user') ?? false;
             renderPageChats(params);
             break;
         }
         case routes.userSettings: {
             const urlParams = new URLSearchParams(location.search);
-            params.queryParams = { editMode: urlParams.get('edit-mode')};
+            params.queryParams.editMode = urlParams.get('edit-mode');
             renderPageUserSettings(params);
             break;
         }

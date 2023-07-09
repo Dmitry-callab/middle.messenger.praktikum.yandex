@@ -6,8 +6,12 @@
         {{> chatsList className="chats__chats-list"}}
     </div>
     <div class="chats__dialog-container">
-        {{> dialogHeader classNameDialogHeader="chats__dialog-header"}}
-        {{> dialogBody classNameDialogBody="chats__dialog-body"}}
-        {{> dialogFooter classNameDialogFooter="chats__dialog-footer"}}
+        {{#if isCertainUser}}
+            {{> dialogHeader classNameDialogHeader="chats__dialog-header"}}
+            {{> dialogBody classNameDialogBody="chats__dialog-body"}}
+            {{> dialogFooter classNameDialogFooter="chats__dialog-footer"}}
+        {{else}}
+            {{> dialogEmpty }}
+        {{/if}}
     </div>
 </div>
