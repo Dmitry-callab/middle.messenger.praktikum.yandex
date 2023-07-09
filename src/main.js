@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
         }
         case routes.somethingWentWrong: {
-            params.queryParams.errorNumber = new URLSearchParams(location.search).get('errorNumber');
+            const urlParams = new URLSearchParams(location.search);
+            params.queryParams.errorNumber = urlParams.get('error');
             renderPageSomethingWentWrong(params);
             break;
         }

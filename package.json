@@ -10,8 +10,7 @@
   "scripts": {
     "start": "vite build && node server.js",
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "devDependencies": {
     "express": "^4.18.2",
