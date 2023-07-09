@@ -35,7 +35,6 @@ function renderPage(params) {
             templateData.isProfileInfo = true;
         }
     }
-    console.log('templateData', templateData);
     render(template(templateData));
 }
 

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const { location } = window;
     const { pathname } = location;
-    console.log('location', location);
 
     const params = { pathname, queryParams: {} };
 
